@@ -10,18 +10,19 @@
       padding: 0;
       font-family: 'Montserrat', sans-serif;
       background-image: url("https://media.discordapp.net/attachments/956781965804187678/1394341427433181255/IMG_1409.png?ex=689224a5&is=6890d325&hm=8048c0640777b03706b8c4c06eb840320dfff2e99eb3b5a0d1d96196d6652ef9&format=webp&quality=lossless&width=2199&height=1238");
-      background-size: cover;
-      background-position: center;
+      background-size: auto;
       background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.85); /* Màu nền có opacity */
+      background: rgba(255, 255, 255, 0.85);
       max-width: 800px;
       padding: 40px;
       border-radius: 20px;
@@ -32,8 +33,9 @@
     h1 {
       font-size: 2.2em;
       font-weight: 800;
-      margin-bottom: 10px;
+      margin: 0 0 20px;
       color: #568396;
+      text-align: center;
     }
 
     h2 {
@@ -74,11 +76,35 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .add-btn {
+      display: inline-block;
+      background-color: #568396;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-btn:hover {
+      background-color: #446778;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🔒 Privacy Policy 🔒</h1>
+    <h1>🔒 Privacy Policy</h1>
     <div class="section-meta">
       <p><strong>Ngày bắn ra:</strong> 02/08/2025</p>
       <div class="indent">
@@ -124,6 +150,10 @@
       <a href="https://discord.gg/E6KtrmZ9Gu">Server Support</a><br>
       💌 Email: <a href="mailto:mxcuteee@gmail.com">mxcuteee@gmail.com</a><br>
       🏠 Trang chủ: <a href="https://mxcuteee.github.io/banhmi">bánh mì</a>
+    </div>
+
+    <div class="btn-container">
+      <a class="add-btn" href="https://discord.com/oauth2/authorize?client_id=1401924897357303911&permissions=8&integration_type=0&scope=bot+applications.commands">🤍 Thêm vào server</a>
     </div>
   </div>
 </body>
